@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"test": "jasmine spec/gilded_rose_spec.js"
+	},
+	"devDependencies": {
+		"jasmine": "^5.1.0"
+	}
+}
