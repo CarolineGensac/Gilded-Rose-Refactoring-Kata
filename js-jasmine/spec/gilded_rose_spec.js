@@ -13,7 +13,10 @@ describe("Gilded Rose", function() {
       new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
       new Item("Backstage passes to a TAFKAL80ETC concert", 5, 39),
 
-      // This Conjured item does not work properly yet
+      // mes tests
+      new Item("fromage qui pue", -1, 12),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 15, 60),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 0, 40),
       new Item("Conjured Mana Cake", 3, 6),
     ];
 
@@ -27,6 +30,8 @@ describe("Gilded Rose", function() {
       console.log("name, sellIn, quality");
       items.forEach(item => console.log(`${item.name}, ${item.sellIn}, ${item.quality}`));
       gildedRose.updateQuality();
+      // gildedRose.updateQuality();
+      // gildedRose.updateQuality();
     }
   });
 
@@ -44,5 +49,5 @@ describe("Gilded Rose", function() {
   
     expect(items[0].quality).toBe(33); // La qualité devrait augmenter de 3
   });
-  
+
 });

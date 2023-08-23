@@ -25,3 +25,11 @@
 //   items.forEach(item => console.log(`${item.name}, ${item.sellIn}, ${item.quality}`));
 //   gildedRose.updateQuality();
 // }
+
+// si le sellIN atteint zero, dégradtion de la qualité * 2 
+
+// it("expiration date reach", function() {
+//   const gildedRose = new Shop([new Item("fromage qui pue", -1, 12)]);
+//   const items = gildedRose.updateQuality();
+//   expect(items[0].quality).toBe("10");
+// });
